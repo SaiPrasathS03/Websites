@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Java FAQs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Java FAQs</h1>
+    <h2 id="questionHeader">Questions</h2>
+    <div id="questionContainer">
+        <p class="questions" onclick="scrollAnswer(1)">1. What is Java? </p>
+        <p class="questions" onclick="scrollAnswer(2)">2. Why is Java a platform independent language? </p>
+        <p class="questions" onclick="scrollAnswer(3)">3. Why is Java not a pure object oriented language?</p>
+        <p class="questions" onclick="scrollAnswer(4)">4. Difference between Heap and Stack Memory in java. </p>
+        <p class="questions" onclick="scrollAnswer(5)">5. Can java be said to be the complete object-oriented programming language?</p>
+        <p class="questions" onclick="scrollAnswer(6)">6. How is Java different from C++? </p>
+        <p class="questions" onclick="scrollAnswer(7)">7. Pointers are used in C/ C++. Why does Java not make use of pointers? </p>
+        <p class="questions" onclick="scrollAnswer(8)">8. What do you understand by an instance variable and a local variable?</p>
+        <p class="questions" onclick="scrollAnswer(9)">9. What are the default values assigned to variables and instances in java? </p>
+        <p class="questions" onclick="scrollAnswer(10)">10. What do you mean by data encapsulation? </p>
+        <p class="questions" onclick="scrollAnswer(11)">11. Briefly explain the concept of constructor overloading</p>
+        <p class="questions" onclick="scrollAnswer(12)">12. Can the main method be Overloaded? </p>
+        <p class="questions" onclick="scrollAnswer(13)">13. Can the static methods be overloaded? </p>
+        <p class="questions" onclick="scrollAnswer(14)">14. What is a singleton class in Java? And How to implement a singleton class? </p>
+    </div>
+    <h2>Answers</h2>
+    <div class="answers">
+        <p id="answer1">1. Java is a high-level programming language that was developed by James Gosling in the year 1982. It is based on the principles of object-oriented programming and can be used to develop large-scale applications. </p>
+        <button onclick="goToTop()">Go to Questions</button>    
+    </div>
+
+    <div class="answers">
+        <p id="answer2">2. Java language was developed so that it does not depend on any hardware or software because the compiler compiles the code and then converts it to platform-independent byte code which can be run on multiple systems.The only condition to run that byte code is for the machine to have a runtime environment (JRE) installed in it.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer3">3. Java supports primitive data types - byte, boolean, char, short, int, float, long, and double and hence it is not a pure object oriented language.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+        
+    <div class="answers">
+        <p id="answer4">4. Stack memory is the portion of memory that was assigned to every individual program. And it was fixed. On the other hand, Heap memory is the portion that was not allocated to the java program but it will be available for use by the java program when it is required, mostly during the runtime of the program.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer5">5. It is not wrong if we claim that Java is the complete object-oriented programming language because everything in Java is under the classes and we can access them by creating the objects.            But we can even say that Java is not a completely object-oriented programming language because it has the support of primitive data types like int, float, char, boolean, double, etc.Now for the question: Is Java a completely object-oriented programming language? We can say that - Java is not a pure object-oriented programming language, because it has direct access to primitive data types. And these primitive data types don't directly belong to the Integer classes.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer6">6. C++ is only a  compiled language, whereas Java is compiled as well as an interpreted language.
+            Java programs are machine-independent whereas a c++ program can run only in the machine in which it is compiled. 
+            C++ allows users to use pointers in the program. Whereas java doesn’t allow it. Java internally uses pointers. 
+            C++ supports the concept of Multiple inheritances whereas Java doesn't support this. And it is due to avoiding the complexity of name ambiguity that causes the diamond problem.</p>        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer7">7. Pointers are quite complicated and unsafe to use by beginner programmers. Java focuses on code simplicity, and the usage of pointers can make it challenging. Pointer utilization can also cause potential errors. Moreover, security is also compromised if pointers are used because the users can directly access memory with the help of pointers.
+            Thus, a certain level of abstraction is furnished by not including pointers in Java. Moreover, the usage of pointers can make the procedure of garbage collection quite slow and erroneous. Java makes use of references as these cannot be manipulated, unlike pointers.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+        
+    <div class="answers">
+        <p id="answer8">8. Instance variables are those variables that are accessible by all the methods in the class. They are declared outside the methods and inside the class. These variables describe the properties of an object and remain bound to it at any cost.            All the objects of the class will have their copy of the variables for utilization. If any modification is done on these variables, then only that instance will be impacted by it, and all other class instances continue to remain unaffected.Local variables are those variables present within a block, function, or constructor and can be accessed only inside them. The utilization of the variable is restricted to the block scope. Whenever a local variable is declared inside a method, the other class methods don’t have any knowledge about the local variable.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+    
+    <div class="answers">
+        <p id="answer9">9. There are no default values assigned to the variables in java. We need to initialize the value before using it. Otherwise, it will throw a compilation error of (Variable might not be initialized). 
+            But for instance, if we create the object, then the default value will be initialized by the default constructor depending on the data type. 
+            If it is a reference, then it will be assigned to null. 
+            If it is numeric, then it will assign to 0.
+            If it is a boolean, then it will be assigned to false. Etc.</p>
+            <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer10">10. Data Encapsulation is an Object-Oriented Programming concept of hiding the data attributes and their behaviours in a single unit.
+            It helps developers to follow modularity while developing software by ensuring that each object is independent of other objects by having its own methods, attributes, and functionalities.
+            It is used for the security of the private properties of an object and hence serves the purpose of data hiding.</p>
+            <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer11">11. Constructor overloading is the process of creating multiple constructors in the class consisting of the same name with a difference in the constructor parameters. Depending upon the number of parameters and their corresponding types, distinguishing of the different types of constructors is done by the compiler.</p>
+
+            <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer12">12. Yes, It is possible to overload the main method. We can create as many overloaded main methods we want.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+        
+    <div class="answers">
+        <p id="answer13">13. Yes! There can be two or more static methods in a class with the same name but differing input parameters.</p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+
+    <div class="answers">
+        <p id="answer14">14. Singleton classes are those classes, whose objects are created only once. And with only that object the class members can be accessed. </p>
+        <button onclick="goToTop()">Go to Questions</button>  
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+html,body{
+    font-size: large;
+    background-color: rgb(191, 182, 196);
+    font-family:monospace;
+}
+h2,h1{
+    text-align: center;
+}
+p{
+    cursor: pointer;
+}
+.answers{
+    border: 1px solid black;
+    width: 50%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 4px;
+    background-color: rgb(171, 165, 194);
+}
+#questionContainer{
+    background-color: rgb(211, 203, 231);
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 5px;
+    align-items: center;
+    border: 1px solid black;
+    width: 50%;
+}
+button{
+    background-color: rgb(211,203,231);
+    cursor: pointer;
+    font-family:monospace;
+
+
+}
